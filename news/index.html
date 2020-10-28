@@ -17,23 +17,27 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -60,7 +64,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -74,17 +78,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">MsCoreUtils</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.9</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../articles/MsCoreUtils.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -95,7 +96,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/RforMassSpectrometry/MsCoreUtils">
+  <a href="https://github.com/RforMassSpectrometry/MsCoreUtils/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -113,43 +114,134 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Changelog <small></small></h1>
+      <h1 data-toc-skip>Changelog <small></small></h1>
       <small>Source: <a href='https://github.com/RforMassSpectrometry/MsCoreUtils/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="mscoreutils-0-1" class="section level1">
-<h1 class="page-header">
-<a href="#mscoreutils-0-1" class="anchor"></a>MsCoreUtils 0.1</h1>
-<div id="mscoreutils-0-0-2" class="section level2">
+    <div id="mscoreutils-11" class="section level1">
+<h1 class="page-header" data-toc-text="1.1">
+<a href="#mscoreutils-11" class="anchor"></a>MsCoreUtils 1.1</h1>
+<div id="changes-in-118" class="section level2">
 <h2 class="hasAnchor">
-<a href="#mscoreutils-0-0-2" class="anchor"></a>MsCoreUtils 0.0.2</h2>
+<a href="#changes-in-118" class="anchor"></a>Changes in 1.1.8</h2>
 <ul>
-<li>Add <code>asInteger</code> and <code>rbindFill</code>.</li>
-<li>Add <code>asRle</code>, <code>asRleDataFrame</code> and <code>asVectorDataFrame</code>.</li>
-<li>Add <code>dotproduct</code>.</li>
-<li>Add <code>group</code>.</li>
+<li>Nothing yet.</li>
 </ul>
 </div>
-<div id="mscoreutils-0-0-1" class="section level2">
+<div id="changes-in-117" class="section level2">
 <h2 class="hasAnchor">
-<a href="#mscoreutils-0-0-1" class="anchor"></a>MsCoreUtils 0.0.1</h2>
+<a href="#changes-in-117" class="anchor"></a>Changes in 1.1.7</h2>
 <ul>
-<li>Add <code>vapply1c</code>, <code>vapply1d</code> and <code>vapply1l</code>.</li>
-<li>Add <code>bin</code>.</li>
-<li>Add <code>closest</code>, <code>common</code> and <code>ppm</code>.</li>
-<li>Package creation &lt;2019-07-16 Tue&gt;</li>
+<li>Rewrite <code><a href="https://rdrr.io/r/base/c.html">c("left", "right", "inner", "outer")</a></code> <code>join</code> in C &lt;2020-10-06 Tue&gt;.</li>
+</ul>
+</div>
+<div id="changes-in-116" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-116" class="anchor"></a>Changes in 1.1.6</h2>
+<ul>
+<li>Rewrite <code>closest</code> in C &lt;2020-09-24 Thu&gt;.</li>
+<li>Fix <a href="https://github.com/rformassspectrometry/MsCoreUtils/issues/65"><a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/65'>#65</a></a> and <a href="https://github.com/rformassspectrometry/MsCoreUtils/issues/66"><a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/66'>#66</a></a>.</li>
+</ul>
+</div>
+<div id="changes-in-115" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-115" class="anchor"></a>Changes in 1.1.5</h2>
+<ul>
+<li>Add <code>...</code> to functions to join and compare peaks; see also <a href="https://github.com/rformassspectrometry/Spectra/issues/131"><a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/131'>#131</a></a>.</li>
+</ul>
+</div>
+<div id="changes-in-114" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-114" class="anchor"></a>Changes in 1.1.4</h2>
+<ul>
+<li>Change references to <code>Feature</code> to <code>QFeatures</code> &lt;2020-07-14 Tue&gt;</li>
+<li>Ensure <code>closest</code> accept just argument <code>tolerance</code> of length 1 or <code><a href="https://rdrr.io/r/base/length.html">length(x)</a></code>; see also <a href="https://github.com/rformassspectrometry/MsCoreUtils/issue/61"><a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/61'>#61</a></a>, <a href="https://github.com/rformassspectrometry/MsCoreUtils/pull/62">PR <a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/62'>#62</a></a> &lt;2020-08-07 Thu&gt;.</li>
+<li>The <code>tolerance</code> argument in <code>closest</code> should now be of length 1 or of <code><a href="https://rdrr.io/r/base/length.html">length(x)</a></code> (was <code><a href="https://rdrr.io/r/base/length.html">length(table)</a></code> before) &lt;2020-08-20 Thu&gt;.</li>
+</ul>
+</div>
+<div id="changes-in-113" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-113" class="anchor"></a>Changes in 1.1.3</h2>
+<ul>
+<li>For an empty <code>table</code> <code>closest</code> and <code>common</code> return a vector of length <code>x</code> with <code>NA</code> or <code>FALSE</code>, respectively (instead of <code>1</code> and <code>TRUE</code>). Fixes <a href="https://github.com/rformassspectrometry/MsCoreUtils/pull/55"><a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/55'>#55</a></a> &lt;2020-06-18 Thu&gt;.</li>
+<li>
+<code>closest</code> and <code>common</code> ignore <code>NA</code> in <code>table</code> &lt;2020-06-19 Fri&gt;.</li>
+<li>Fix <code>rbindFill</code> for single <code>data.frame</code> or <code>DataFrame</code> as input &lt;2020-06-23 Tue&gt;.</li>
+</ul>
+</div>
+<div id="changes-in-112" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-112" class="anchor"></a>Changes in 1.1.2</h2>
+<ul>
+<li>New <code><a href="../reference/colCounts.html">colCounts()</a></code> aggregation function &lt;2020-05-27 Wed&gt;.</li>
+</ul>
+</div>
+<div id="changes-in-111" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-111" class="anchor"></a>Changes in 1.1.1</h2>
+<ul>
+<li><p>Add some popular distance/similarity metrices: <code>ndotproduct</code> <code>neuclidean</code> <code>navdist</code> <code>nspectraangle</code>; see also <a href="https://github.com/rformassspectrometry/MsCoreUtils/pull/33">PR <a href='https://github.com/RforMassSpectrometry/MsCoreUtils/issues/33'>#33</a></a>.</p></li>
+<li><p>Add deprecation note to <code>dotproduct</code> &lt;2020-05-22 Fri&gt;.</p></li>
+</ul>
+</div>
+<div id="changes-in-110" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-110" class="anchor"></a>Changes in 1.1.0</h2>
+<ul>
+<li>Bioconductor devel version (Bioc 3.12)</li>
+</ul>
+</div>
+</div>
+    <div id="mscoreutils-10" class="section level1">
+<h1 class="page-header" data-toc-text="1.0">
+<a href="#mscoreutils-10" class="anchor"></a>MsCoreUtils 1.0</h1>
+<div id="changes-in-100" class="section level2">
+<h2 class="hasAnchor">
+<a href="#changes-in-100" class="anchor"></a>Changes in 1.0.0.</h2>
+<ul>
+<li>Bioconductor release version (Bioc 3.11)</li>
+</ul>
+</div>
+</div>
+    <div id="mscoreutils-099" class="section level1">
+<h1 class="page-header" data-toc-text="0.99">
+<a href="#mscoreutils-099" class="anchor"></a>MsCoreUtils 0.99</h1>
+<div id="mscoreutils-0993" class="section level2">
+<h2 class="hasAnchor">
+<a href="#mscoreutils-0993" class="anchor"></a>MsCoreUtils 0.99.3</h2>
+<ul>
+<li>Trigger build.</li>
+</ul>
+</div>
+<div id="mscoreutils-0992" class="section level2">
+<h2 class="hasAnchor">
+<a href="#mscoreutils-0992" class="anchor"></a>MsCoreUtils 0.99.2</h2>
+<ul>
+<li>Provide more comprehensive description.</li>
+<li>Add vignette.</li>
+</ul>
+</div>
+<div id="mscoreutils-0991" class="section level2">
+<h2 class="hasAnchor">
+<a href="#mscoreutils-0991" class="anchor"></a>MsCoreUtils 0.99.1</h2>
+<ul>
+<li>Additional functions, and using <a href="mailto:Author@R" class="email">Author@R</a> to specify (unique) RforMassSpectrometry Package Maintainer.</li>
+</ul>
+</div>
+<div id="mscoreutils-0990" class="section level2">
+<h2 class="hasAnchor">
+<a href="#mscoreutils-0990" class="anchor"></a>MsCoreUtils 0.99.0</h2>
+<ul>
+<li>First release of <code>MsCoreUtils</code> with core function to get extreme values, grouping/matching, noise/smoothing, similarity measurements, various helper function, and function to process (impute and normalise) quantitative features.</li>
 </ul>
 </div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <div id="tocnav">
-      <h2>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="#mscoreutils-0-1">0.1</a></li>
-      </ul>
-    </div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 
 </div>
@@ -157,11 +249,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Laurent Gatto, Johannes Rainer, Sebastian Gibb.</p>
+  <p>Developed by RforMassSpectrometry Package Maintainer, Laurent Gatto, Johannes Rainer, Sebastian Gibb.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
 </div>
 
       </footer>
