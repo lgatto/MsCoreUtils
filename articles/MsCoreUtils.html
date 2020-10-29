@@ -139,21 +139,21 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">letters</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span>
 <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">LETTERS</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span>
 <span class="va">x</span></pre></div>
-<pre><code>##            a          b         c          d         e          f         g
-## A -0.3223420 -0.9908477 1.5302656  1.1263383 1.6222175  1.9673951 0.3349348
-## B  0.3508994 -0.8310711 0.1938846 -0.2725386 0.2417731  0.9436941 1.7390586
-## C -0.4970273 -1.3204799 0.6327426 -1.4534482 1.0234770 -0.1236967 0.6880011
-##            h          i          j
-## A  1.1111446 -1.2894905 -0.3415559
-## B -1.0618196 -0.1116812 -0.2982618
-## C  0.9611974 -0.3103771 -0.3271982</code></pre>
+<pre><code>##            a           b          c          d          e            f
+## A  0.3419298  2.55751679 -1.3251730 -0.8406598 -1.4981131 -0.703556026
+## B -0.9402901 -0.06439424 -0.3556799 -1.3382744 -2.7062044 -0.241499095
+## C -0.9988710  0.51165326 -0.3512779  0.7229997  0.6746746 -0.000672563
+##            g         h          i          j
+## A -1.2614818 -0.552086 -1.1177411 -0.8365797
+## B  0.2057736  2.913575  1.2302596  2.2248077
+## C  0.2803261 -1.346757 -0.4803176 -0.6532064</code></pre>
 <div class="sourceCode" id="cb5"><pre class="downlit">
 <span class="fu"><a href="../reference/robustSummary.html">robustSummary</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></pre></div>
 <pre><code>## Warning in rlm.default(X, expression, ...): 'rlm' failed to converge in 20 steps</code></pre>
 <pre><code>##          a          b          c          d          e          f          g 
-## -0.1561566 -1.0474662  0.7856309 -0.2465856  0.9624892  0.9291308  0.9316786 
+## -0.5533244  0.6395684 -0.6773769 -0.4853115 -1.1885176 -0.3152426 -0.2584607 
 ##          h          i          j 
-##  0.6003815 -0.4927880 -0.3223386</code></pre>
+## -0.2427118 -0.1276312 -0.0738005</code></pre>
 <p>This function is typicall to be used to summarise peptide quantitation values into protein intensities<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. This functionality is available in</p>
 <ul>
 <li><p>the <a href="http://lgatto.github.io/MSnbase/reference/combineFeatures.html">MSnbase::combineFeatures()</a> function for <code>MSnSet</code> objects and</p></li>
